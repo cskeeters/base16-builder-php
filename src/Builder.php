@@ -94,6 +94,9 @@ class Builder
 			$vars[$base_key . '-rgb-r'] = $color->getRgb()['R'];
 			$vars[$base_key . '-rgb-g'] = $color->getRgb()['G'];
 			$vars[$base_key . '-rgb-b'] = $color->getRgb()['B'];
+			$vars[$base_key . '-rgb-r-fw'] = str_pad($color->getRgb()['R'], 3, " ", STR_PAD_LEFT);
+			$vars[$base_key . '-rgb-g-fw'] = str_pad($color->getRgb()['G'], 3, " ", STR_PAD_LEFT);
+			$vars[$base_key . '-rgb-b-fw'] = str_pad($color->getRgb()['B'], 3, " ", STR_PAD_LEFT);
 		}
 
 		return $vars;
